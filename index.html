@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Family Webpage</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>My Family</h1>
+        <img src="IMG_9762.JPG" id="photo">
+        <h2 id="name">Family</h2>
+        <button id="button1"
+        onclick="nextslide()">Next</button>
+        <script>
+            var image=["IMG_9762.JPG","Chanchal.jpg","DIDI.JPG","GRADFATHER.JPG","GRANDMOTHER.JPG","sameer.jpg","VEER.jpg"];
+            var Name=["Family","Mother","Sister","Grandfather","Grandmother","Father","Me"]
+            var i=0;
+            function nextslide(){
+                document.getElementById("photo").innerHTML=image[i];
+                document.getElementById("name").innerHTML=Name[i];
+                i++
+            }
+        </script>
+    </body>
+</html>
